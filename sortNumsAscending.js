@@ -17,7 +17,7 @@ const sortNumsAscending = function (arr) {
 
 }
 
-console.log(sortNumsAscending([80, 29, 4, -95, -24, 85]));
+console.log(sortNumsAscending([]));
 
 //sortNumsAscending([1, 2, 10, 50, 5]) 
 //➞ [1, 2, 5, 10, 50]
