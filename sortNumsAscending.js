@@ -4,9 +4,20 @@
 // If the function's argument is null, an empty array, or undefined; return an empty array.
 // Return a new array of sorted numbers.
 
-const sortNumsAscending = function(arr) {
+const sortNumsAscending = function (arr) {
+
+  let newArr = [];
+
+  if (arr) {
+    newArr = arr.sort((a, b) => a - b);
+    return newArr;
+  } else {
+    return newArr;
+  }
 
 }
+
+console.log(sortNumsAscending([80, 29, 4, -95, -24, 85]));
 
 //sortNumsAscending([1, 2, 10, 50, 5]) 
 //➞ [1, 2, 5, 10, 50]

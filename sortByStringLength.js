@@ -4,8 +4,14 @@
 //all string lengths in an array will be different (dont worry about two of the same length)
 
 const sortByLength = function(arr) {
-  // your code here
+
+  arr.sort((a, b) => a.length - b.length);
+
+  return arr;
+  
 }
+
+console.log(sortByLength([]));
 
 // sortByLength(["a", "ccc", "dddd", "bb"]) 
 //➞ ["a", "bb", "ccc", "dddd"]
