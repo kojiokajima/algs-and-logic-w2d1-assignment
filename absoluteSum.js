@@ -1,17 +1,18 @@
 // Write a fucntion that takes an array of integers (positive or negative or both) and return 
 // the sum of the absolute value of each element.
 
-const getAbsSum = function(arr) {
+const getAbsSum = function (arr) {
   let sum = 0;
- arr.forEach(element => {
-   if(element >= 0) {
-    sum += element;
-   } else {
-     sum -= element;
-   }
- });
 
- return sum;
+  arr.forEach(element => {
+    if (element >= 0) {
+      sum += element;
+    } else {
+      sum -= element;
+    }
+  });
+
+  return sum;
 }
 
 let result = getAbsSum([-1]);
